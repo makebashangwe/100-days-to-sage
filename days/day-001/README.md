@@ -64,3 +64,7 @@ The work does not need to be perfect to count. It needs to be implemented, teste
 ## Next Step
 
 Build a tiny interactive Keba Builder Console using HTML, CSS, JavaScript event handling, and DOM updates.
+![alt text](image.png)
+
+
+*Cleaned Up with ChatGPT, Written by Keeb...*
