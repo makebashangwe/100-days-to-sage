@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href = "style.css">
+  <title>Keba Builder Console</title>
+</head>
+
+<body>
+    <header>
+        <h1>Keba Builder Console</h1>
+    </header>
+    <main>
+        <section>
+            <h2> Status: </h2>
+            <p id="status-display">Idle</p>
+        </section>
+
+        <section>
+            <button id="start-button">Start</button>
+            <button id="power-button">Idle</button>
+            <button id="count-button">Count</button>
+            
+            <p>Completed Builds: <span id="completed-builds">0</span></p>
+            <br>
+        </section>
+
+        <section>
+            <h2>Building Milestones</h2>
+            <ul id="milestone-list">
+                
+            </ul>
+            <br>
+        </section>
+        <section>
+            <h2>New Milestone?</h2>
+            <form>
+                <p>Enter New Milestone Title:</p>
+                <input type="text" id="new-milestone-name" placeholder="Enter New Milestone Title"><br>
+                
+                <p>Completed?</p>
+                <input
+                type="radio"
+                id="completion-yes"
+                name="completion-status"
+                value="yes"
+                required
+                >
+                <label for="completion-yes">Yes</label><br>
+
+                <input
+                type="radio"
+                id="completion-no"
+                name="completion-status"
+                value="no"
+                required
+                >
+                <label for="completion-no">No</label><br><br>
+            </form>
+            <button id="add-milestone">Add Milestone</button>
+
+            <h2>Remove an Old Milestone</h2>
+
+            <input type="text" id="remove-milestone-name" placeholder="Enter Milestone Title"><br><br>
+            <button id="remove-milestone">Remove Milestone</button>
+
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
