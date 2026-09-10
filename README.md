@@ -23,7 +23,7 @@ problem-solving skills required to become an Intelligent Systems Engineer.
 - Done? | Day : Expected Completion Date
 - [x] Day 001 : September 7th, 2026
 - [x] Day 002 : September 8th, 2026
-- [ ] Day 003 : September 9th, 2026
+- [x] Day 003 : September 9th, 2026
 - [ ] Day 004 : September 10th, 2026
 - [ ] Day 005 : September 11th, 2026
 - [ ] Day 006 : September 12th, 2026

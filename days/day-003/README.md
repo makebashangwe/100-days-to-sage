@@ -57,12 +57,11 @@ I verified that:
 - The page runs without console errors.
 
 ## Proof
-
-Add Day 003 screenshots or a short demonstration clip to the media folder and link them here.
-
-<!-- Example:
-![Day 003 milestone tracker](media/day-003-milestone-tracker.png)
--->
+![alt text](<Screenshot 2026-09-10 024404.png>)
+![alt text](<Screenshot 2026-09-10 024441.png>)
+![alt text](<Screenshot 2026-09-10 024426.png>)
+![alt text](<Screenshot 2026-09-10 024448.png>)
+![alt text](<Screenshot 2026-09-10 024508.png>)
 
 ## Reflection
 
