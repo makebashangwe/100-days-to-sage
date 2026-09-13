@@ -1,0 +1,107 @@
+/* 1. CSS VARIABLES (The Cozy Configuration) */
+:root {
+  --bg-primary: #fdfbf7; /* Warm, creamy off-white */
+  --bg-secondary: #ffffff;
+  --text-main: #4a4a4a; /* Soft dark grey, easier on the eyes than pure black */
+  --accent-color: #ffb7b2; /* Soft pastel pink/peach */
+  --accent-hover: #ff9a9e;
+  --success-color: #a8e6cf; /* Mint green */
+  --danger-color: #ff8b94; /* Soft coral */
+  --shadow-soft: 0 8px 24px rgba(149, 157, 165, 0.15);
+  
+  --font-stack: 'Quicksand', 'Segoe UI', Roboto, sans-serif;
+}
+
+/* 2. BASE RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: var(--font-stack);
+  padding: 2rem;
+  /* Centers the dashboard on large screens */
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+/* 3. TYPOGRAPHY & SEMANTIC ELEMENTS */
+h1, h2 {
+  color: var(--text-main);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  background-color: var(--bg-primary);
+  margin: 1.5rem 0;
+  border-radius: 2px;
+}
+
+/* 4. DASHBOARD ARCHITECTURE (CSS Grid) */
+main {
+  display: grid;
+  /* Creates a responsive grid: minimum 300px wide columns, max 1 fraction of space */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem; 
+}
+
+/* Treat each section as a rounded "Card" */
+section {
+  background-color: var(--bg-secondary);
+  padding: 2rem;
+  border-radius: 24px; /* The high border-radius for the 'cute' look */
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.2s ease;
+}
+
+section:hover {
+  transform: translateY(-4px); /* Slight floating effect on hover */
+}
+
+/* 5. BUTTONS & INPUTS */
+button {
+  background-color: var(--accent-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 99px; /* Pill shape */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  margin-right: 0.5rem;
+}
+
+button:hover {
+  background-color: var(--accent-hover);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #f0f0f0;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+  border-color: var(--accent-color);
+}
