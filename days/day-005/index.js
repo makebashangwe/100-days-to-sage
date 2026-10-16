@@ -8,6 +8,7 @@ const server = http.createServer((req, res) => {
     }else if (req.method === 'GET' && req.url ==='/builds'){
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');
+        res.setHeader('Access-Control-Allow-Origin', 'http://127.0.0.1:5500');
         res.end(JSON.stringify([
             { id: 1, name: 'keeb', status: 'chillin' },
             { id: 2, name: 'chance', status: 'ok' }]));
